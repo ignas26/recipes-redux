@@ -11,9 +11,9 @@ class App extends React.Component{
         <BrowserRouter>
           <div>
             <Header/>
+            <Sidebar/>
             <Switch>
-              <Route exact path="/" component={Landing}/>
-              <Route exact path="/sidebar" component={Sidebar}/>
+              <Route path="/" component={Landing}/>
             </Switch>
           </div>
         </BrowserRouter>
