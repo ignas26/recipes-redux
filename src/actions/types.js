@@ -1,0 +1,2 @@
+export const MAKE_ACTIVE = 'MAKE_ACTIVE';
+export const CHANGE_CURRENT = 'CHANGE_CURRENT';
