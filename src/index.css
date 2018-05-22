@@ -18,7 +18,7 @@ header h1{
 }
 
 .sidebar{
-    width: 15%;
+    width: 45%;
     border: 1px dashed black;
 }
 
@@ -27,21 +27,40 @@ header h1{
     cursor: pointer;
     background: green;
     color: whitesmoke;
+    width: 100%;
+    list-style-type: georgian;
+}
+
+.sidebar-inside li:before{
+    color: red;
 }
 
 .sidebar-li{
-    margin: 20px;
+    margin: 30px;
 }
 
 .recipes{
-    width: 55%;
+    width: 52%;
     border: 1px dashed black;
-font-size: 20px;
+    font-size: 18px;
+    float: right;
+    margin: 10px;
+}
+
+.recipes-name{
+margin: 0;
+}
+
+.recipes-about{
+    padding-top: 30px;
+    text-align: center;
 }
 
 .inline{
     display: inline-flex;
-    padding: 5px;
-    margin: 10px;
+}
 
+.components-parent{
+    width: 50%;
+    margin: auto;
 }

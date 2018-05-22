@@ -31,7 +31,8 @@ const initialState= {
       '\n' +
       'Kepimo skardą iškloti kepimo popieriumi. Kepti apie 1 val. orkaitę įkaitinus iki 200 ar 180 laipsnių karščio. Priklausomai nuo orkaitės reikėtų koreguoti ir kepimo trukmę. Iškeptą duoną uždengti drėgnu lininių rankšluosčiu, kad pluta būtų minkštesnė.'},
     ],
-  title: 'Receptai'
+  title: 'Receptai',
+  warning: 'Pasirinkite pageidaujamą receptą kairėje'
 };
 
 const recipesReducer = (state=initialState, action)=>{

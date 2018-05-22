@@ -12,10 +12,12 @@ class App extends React.Component{
         <BrowserRouter>
           <div>
             <Header/>
+            <div className='components-parent'>
             <Sidebar/>
             <Switch>
               <Route path="/" component={Landing}/>
             </Switch>
+            </div>
           </div>
         </BrowserRouter>
     );

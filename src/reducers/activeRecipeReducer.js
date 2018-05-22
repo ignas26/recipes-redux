@@ -1,15 +1,14 @@
-import {CHANGE_CURRENT, MAKE_ACTIVE} from "../actions/types";
+import {MAKE_ACTIVE} from "../actions/types";
 
 const initialState= {
-//activeRecipe:['Šaltibarščiai', 'Sriuba', 'Blynai', 'Lazanija', 'Duona']
-activeRecipe:''
-};
+  name: '',
+    about: ''};
 
 const activeRecipeReducer = (state=initialState, action)=>{
-  switch (action.type){
-    case MAKE_ACTIVE : return {...state, activeRecipe:action.payload};
-    case CHANGE_CURRENT : return {...state, activeRecipe:action.payload};
-    default : return state
+  if(action.type===MAKE_ACTIVE){
+    return action.payload;
+  }else{
+    return state;
   }
 };
 

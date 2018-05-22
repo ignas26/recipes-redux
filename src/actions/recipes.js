@@ -1,5 +1,5 @@
 import {MAKE_ACTIVE} from './types';
-import {CHANGE_CURRENT} from './types';
+//import {CHANGE_CURRENT} from './types';
 
 export function makeActive(i) {
   return {
@@ -8,9 +8,9 @@ export function makeActive(i) {
   }
 }
 
-export function changeCurrent(name) {
-  return {
-    type: CHANGE_CURRENT,
-    payload: name
-  }
-}
+// export function changeCurrent(name) {
+//   return {
+//     type: CHANGE_CURRENT,
+//     payload: name
+//   }
+// }
