@@ -5,7 +5,10 @@ import * as actions from '../actions/recipes';
 const Sidebar = (props)=>{
   const sidebar = props.recipes.recipe.map((rep, i)=>{
     return (
-        <li key={i} className="sidebar-li" onClick={() => props.makeActive(rep)}> {rep.name}
+        <li key={i} className="sidebar-li" onClick={() => props.makeActive(rep)}>
+          <div className="h-line"
+          {rep.name}
+          </div>
         </li>
   )
 }
